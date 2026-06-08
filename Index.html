@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fesatech - Propuesta Azure | Electrobello</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%); color: white; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); }
+        .glass-hover:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(56, 189, 248, 0.5); transform: translateY(-5px); transition: all 0.3s ease; }
+        .neumorph { background: linear-gradient(145deg, rgba(30, 58, 138, 0.4), rgba(15, 23, 42, 0.6)); box-shadow: 5px 5px 10px rgba(0,0,0,0.3), -5px -5px 10px rgba(255,255,255,0.05); }
+        .gradient-text { background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold tracking-tighter">FESA<span class="text-sky-400">TECH</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#proyecto" class="hover:text-sky-400 transition px-3 py-2 rounded-md text-sm font-medium">Proyecto</a>
+                        <a href="#pasos" class="hover:text-sky-400 transition px-3 py-2 rounded-md text-sm font-medium">Metodología</a>
+                        <a href="#costos" class="hover:text-sky-400 transition px-3 py-2 rounded-md text-sm font-medium">Inversión</a>
+                        <a href="#contacto" class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-full text-sm font-medium transition shadow-lg shadow-sky-500/30">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 w-96 h-96 bg-sky-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="glass inline-block px-4 py-1 rounded-full mb-6 fade-in">
+                <span class="text-sky-300 text-sm font-semibold">📅 Junio 2026 | Proyecto Electrobello</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in" style="transition-delay: 100ms;">
+                Modernización de <br>
+                <span class="gradient-text">Infraestructura Azure</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-300 fade-in" style="transition-delay: 200ms;">
+                Migración segura de Windows Server 2012 a 2022/2025. Eliminación de brechas de seguridad, arquitectura escalable y plan de mejora continua.
+            </p>
+            <div class="mt-10 flex justify-center gap-4 fade-in" style="transition-delay: 300ms;">
+                <a href="#costos" class="px-8 py-4 bg-sky-500 hover:bg-sky-600 rounded-xl font-bold text-lg transition shadow-lg shadow-sky-500/40 flex items-center gap-2">
+                    Ver Propuesta <i class="fas fa-arrow-right"></i>
+                </a>
+                <button onclick="alert('Descargando PDF original...')" class="px-8 py-4 glass glass-hover rounded-xl font-bold text-lg transition flex items-center gap-2">
+                    <i class="fas fa-file-pdf"></i> PDF Original
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Pasos Interactivos -->
+    <section id="pasos" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Proceso de Desarrollo <span class="text-sky-400">en 5 Pasos</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Paso 1 -->
+                <div class="glass glass-hover p-6 rounded-2xl fade-in cursor-pointer group">
+                    <div class="text-4xl font-bold text-sky-500/30 group-hover:text-sky-400 transition mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-2">Descripción</h3>
+                    <p class="text-sm text-gray-400">Contextualización del requerimiento y alcance del proyecto.</p>
+                </div>
+                <!-- Paso 2 -->
+                <div class="glass glass-hover p-6 rounded-2xl fade-in cursor-pointer group" style="transition-delay: 100ms;">
+                    <div class="text-4xl font-bold text-sky-500/30 group-hover:text-sky-400 transition mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-2">Costos Cloud</h3>
+                    <p class="text-sm text-gray-400">Recursos en nube necesarios y estimación mensual de los mismos.</p>
+                </div>
+                <!-- Paso 3 -->
+                <div class="glass glass-hover p-6 rounded-2xl fade-in cursor-pointer group" style="transition-delay: 200ms;">
+                    <div class="text-4xl font-bold text-sky-500/30 group-hover:text-sky-400 transition mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-2">Solución</h3>
+                    <p class="text-sm text-gray-400">Arquitectura cloud o híbrida robusta, segura y gestionable.</p>
+                </div>
+                <!-- Paso 4 -->
+                <div class="glass glass-hover p-6 rounded-2xl fade-in cursor-pointer group" style="transition-delay: 300ms;">
+                    <div class="text-4xl font-bold text-sky-500/30 group-hover:text-sky-400 transition mb-4">04</div>
+                    <h3 class="text-xl font-bold mb-2">Despliegue</h3>
+                    <p class="text-sm text-gray-400">Puesta en marcha mediante bolsas de horas según esfuerzo.</p>
+                </div>
+                <!-- Paso 5 -->
+                <div class="glass glass-hover p-6 rounded-2xl fade-in cursor-pointer group" style="transition-delay: 400ms;">
+                    <div class="text-4xl font-bold text-sky-500/30 group-hover:text-sky-400 transition mb-4">05</div>
+                    <h3 class="text-xl font-bold mb-2">Mejora Continua</h3>
+                    <p class="text-sm text-gray-400">Seguimiento mensual: costos, seguridad, monitoreo y continuidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitectura IaaS vs PaaS -->
+    <section id="proyecto" class="py-20 bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Arquitectura de <span class="gradient-text">Referencia</span></h2>
+                    <p class="text-gray-300 mb-6">Evaluamos dos modelos para garantizar escalabilidad y alta disponibilidad en la capa de datos:</p>
+                    <div class="space-y-4">
+                        <div class="glass p-4 rounded-xl border-l-4 border-sky-500">
+                            <h4 class="font-bold text-lg">Opción A: IaaS</h4>
+                            <p class="text-sm text-gray-400">SQL Server on Azure VM. Control total del Sistema Operativo.</p>
+                        </div>
+                        <div class="glass p-4 rounded-xl border-l-4 border-indigo-500">
+                            <h4 class="font-bold text-lg">Opción B: PaaS (Recomendada)</h4>
+                            <p class="text-sm text-gray-400">Azure SQL Database. Servicio administrado, Serverless/Provisioned.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neumorph p-8 rounded-3xl fade-in flex items-center justify-center h-80">
+                    <div class="text-center">
+                        <i class="fas fa-server text-6xl text-sky-400 mb-4 animate-pulse"></i>
+                        <p class="text-xl font-semibold">Windows Server 2022/2025</p>
+                        <p class="text-gray-400 text-sm mt-2">Serie D o E para aplicaciones empresariales</p>
+                        <div class="mt-6 flex justify-center gap-2">
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs border border-green-500/30">Alta Disponibilidad</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs border border-blue-500/30">Seguridad Avanzada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Costos -->
+    <section id="costos" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 fade-in">Inversión y <span class="text-sky-400">Planes de Servicio</span></h2>
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden fade-in">
+                <div class="absolute top-0 right-0 bg-sky-500 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">POPULAR</div>
+                <h3 class="text-2xl font-bold mb-2">Plan de Servicio ERP / Azure</h3>
+                <p class="text-gray-400 mb-8">Bolsa de horas con compromiso a 6 meses</p>
+                
+                <div class="flex justify-center items-baseline mb-8">
+                    <span class="text-5xl font-bold text-white">$2.5M</span>
+                    <span class="text-xl text-gray-400 ml-2">COP / mes</span>
+                </div>
+                
+                <ul class="text-left space-y-4 mb-8 max-w-md mx-auto">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sky-400"></i> 10 horas mensuales (60 horas totales)</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sky-400"></i> Puesta en marcha, soporte y consultoría</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sky-400"></i> Seguimiento y optimización sobre la marcha</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-clock text-gray-500"></i> Hora adicional: $230.000 COP + IVA</li>
+                </ul>
+
+                <button class="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 rounded-xl font-bold text-lg transition shadow-lg shadow-sky-500/30">
+                    Aprobar Propuesta
+                </button>
+                <p class="text-xs text-gray-500 mt-4">*Pago mes anticipado. Servicios profesionales remotos. IVA aplica según vigencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="border-t border-white/10 py-12 bg-black/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-2xl font-bold tracking-tighter">FESA<span class="text-sky-400">TECH</span></span>
+                <p class="text-gray-400 text-sm mt-2">Transformación digital y soluciones en la nube.</p>
+            </div>
+            <div class="flex gap-6 text-gray-300">
+                <a href="mailto:jsalas@fesatech.com" class="hover:text-sky-400 transition flex items-center gap-2"><i class="fas fa-envelope"></i> jsalas@fesatech.com</a>
+                <a href="tel:+573135310180" class="hover:text-sky-400 transition flex items-center gap-2"><i class="fas fa-phone"></i> +57 313 5310180</a>
+                <a href="https://www.fesatech.com" target="_blank" class="hover:text-sky-400 transition flex items-center gap-2"><i class="fas fa-globe"></i> www.fesatech.com</a>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-xs mt-8">
+            © 2026 Fesatech. Oferta confidencial con validez de 30 días.
+        </div>
+    </footer>
+
+    <script>
+        // Animación de aparición al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
